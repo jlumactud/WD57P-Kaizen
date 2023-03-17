@@ -1,0 +1,42 @@
+/* 
+    Provides a semantic media query from the following: 
+    Respond above XX(screen sizes)
+    Respond below XX
+    Respond between XX and XX
+
+    Whereas:
+    XX is the two letter bootstrap breakpoint (i.e sm, md)
+
+    SYNTAX for media query
+    @media (min-width:768px) and (max-width: 991px) 
+    {
+        Target devices between 768px and 992 px
+    }
+
+    It's best practice to use Bootstrap breakpoints in your own code but it's painful to write them all the time. 
+*/
+@media (min-width: 576px) {
+  .card {
+    display: block;
+  }
+}
+@media (max-width: 991px) {
+  .card {
+    display: block;
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+/*
+    Respond Between
+    - it checks both lower and upper keys exists in the breakpoints before writing this in the media query
+    - we will check that both $lower and $upper keys exist un the $breakpoints map before writing it in the media query
+*/
+@media (min-width: 576px) and (max-width: 1399px) {
+  .card img {
+    display: block;
+    height: 100%;
+  }
+}
