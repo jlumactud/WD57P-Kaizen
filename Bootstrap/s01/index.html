@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/bootstrap.css"> import packages -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+    <title>S01: Introduction to Bootstrap</title>
+</head>
+<body>
+
+    <!-- table -->
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td colspan="2">Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+    </table>
+
+    <h1>Colored Links</h1>
+
+    <a href="#" class="link-primary">Primary link</a>
+    <a href="#" class="link-secondary">Secondary link</a>
+    <a href="#" class="link-success">Success link</a>
+    <a href="#" class="link-danger">Danger link</a>
+    <a href="#" class="link-warning">Warning link</a>
+    <a href="#" class="link-info">Info link</a>
+    <a href="#" class="link-light">Light link</a>
+    <a href="#" class="link-dark">Dark link</a>
+
+    <h1>Background Colors</h1>
+
+    <div class="p-3 mb-2 bg-primary text-white">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum quisquam eius delectus labore ipsam libero ullam. Repudiandae quod ab culpa perferendis quasi tempora eveniet, fuga debitis asperiores enim nesciunt.
+    </div>
+    
+
+    <div class="p-3 mb-2 bg-body text-body">.bg-body</div>
+    <div class="p-3 mb-2 bg-black text-white">.bg-black</div>
+    <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+    <div class="p-3 mb-2 bg-transparent text-body">.bg-transparent</div>
+
+    <h1>Font Colors</h1>
+    <p class="text-primary">.text-primary</p>
+
+    <h1>Text Transform</h1>
+
+    <p class="text-lowercase">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde accusantium, harum, distinctio sed at consequuntur aliquam est officia dicta assumenda molestiae rerum natus dolorem quaerat nulla exercitationem minima quas!
+    </p>
+
+    <p class="text-capitalize">CapiTaliZed text.</p>
+
+    <h1>Font weight and italics</h1>
+
+    <p class="fw-bold">Bold text.</p>
+    <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+    <p class="fw-semibold">Semibold weight text.</p>
+    <p class="fw-normal">Normal weight text.</p>
+    <p class="fw-light">Light weight text.</p>
+    <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+    <p class="fst-italic">Italic text.</p>
+    <p class="fst-normal">Text with normal font style</p>
+
+    <h1>Text Alignment</h1>
+    <p class="text-center">Center aligned text on all viewport sizes.</p>
+
+    <!-- <span class="text-center">Align this element to the center</span> -->
+    <!-- Span elements doesn't work on bootstrap dahil naka inline element -->
+
+    <h3>Using Semantic Element in Bootstrap</h3>
+    <section class="text-center">Align this element in the center</section>
+
+    <p class="text-center px-4">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo officiis, culpa dolores, adipisci quam, esse fugit aut nesciunt quo debitis iure. Quisquam laudantium molestias odit accusantium beatae nulla alias ipsam.
+    </p>
+
+    <!-- text justify -->
+
+    <p class="text-justify px-4">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt iusto possimus molestias, nulla beatae illo, omnis officiis itaque qui corrupti aspernatur nostrum sit vitae reprehenderit ea sed numquam facere ullam.
+    </p>
+
+    <!-- Border Additive -->
+    <span class="border border-primary"></span>
+    <span class="border border-secondary"></span>
+    <span class="border border-success"></span>
+    <span class="border border-danger"></span>
+    <span class="border border-warning"></span>
+    <span class="border border-info"></span>
+    <span class="border border-light"></span>
+    <span class="border border-dark"></span>
+
+    <img src="jamie-street-MoDcnVRN5JU-unsplash.jpg" class="rounded-circle" alt="dog" height="200px">
+
+    <!-- Display Properties -->
+
+    <div class="d-inline p-2 text-bg-primary">d-inline</div>
+    <div class="d-inline p-2 text-bg-dark">d-inline</div>
+
+    <!-- Sizing -->
+    <div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+        <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+        <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+        <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+        <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+        <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto</div>
+      </div>
+
+    <!-- Responsive Images -->
+    <img src="jamie-street-MoDcnVRN5JU-unsplash.jpg" class="img-thumbnail" alt="...">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaSS Example with Bootstrap</title>
+
+    <!-- Bootstrap CSS starts here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  </head>
+</head>
+<body>
+
+    <header>
+        <!-- Header tag reminds the user that this has navigation bars, banners and everything that is considered at the top page. -->
+
+        <!-- Navigation starts here -->
+        <nav class="navbar navbar-expand-lg bg-primary">
+            <div class="container-fluid">
+                <!-- Container Fluid : width 100% of all breakpoints -->
+                <!-- Breakpoints these are sizes of each screen dimension -->
+              <a class="navbar-brand" href="#">
+                <img src="./images/beer.png" alt="beer" height="50px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#product">Products</a>
+                  <a class="nav-link" href="#">Contact</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container-fluid">
+            <div class="card">
+                <img src="./images/baileys.png" class="card-img" alt="bailey">
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-3">
+
+        <!-- GRID - consist of 12 column system, 6 default responsive tiers, SaSS variable and mixins. -->
+
+        <!-- GUTTERS - these are padding between your columns. It is used to responsively space and align the content in Bootstrap grid system -->
+
+        <p>
+            <h1 class="text-center" id="product">MOST PURCHASED LIQUORS</h1>
+        </p>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="./images/carlosprimero-imperial.jpg" class="card-img-top" alt="carlos-primero">
+                <div class="card-body">
+                  <h5 class="card-title">Carlos Primero Imperial</h5>
+                  <p class="card-text">
+                    A long-aged traditional Spanish grape brandy from the Jerez region, more famous for its fortified wine. Carlos I has been aged in a solera system, just like the sherry itself.
+                  </p>
+                  <p class="card-text">
+                    Amount: $35.00
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./images/jagermeister.jpg" class="card-img-top" alt="jagermeister" height="510px">
+                <div class="card-body">
+                  <h5 class="card-title">Jagermeister</h5>
+                  <p class="card-text">
+                    It is a German digestif made with 56 herbs and spices. Developed in 1934 by Wilhelm and Curt Mast. It has an alcohol by volume of 35% (61 degrees proof, or US 70 proof).
+                  </p>
+
+                  <p class="card-text">
+                    Amount: $35.00
+                  </p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="./images/Goldschlagger.jpg" class="card-img-top" alt="Goldschlagger" height="520px">
+                <div class="card-body">
+                  <h5 class="card-title">Goldschlagger</h5>
+                  <p class="card-text">
+                    It is a Swiss cinnamon schnapps a liqueur with very thin, yet visible flakes of gold floating in it.
+                  </p>
+                </div>
+                <div class="card-footer">
+                    <button type="button" class="btn btn-primary">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-center mt-5">
+            <a href="./menus/products.html">VIEW ALL</a>
+          </p>
+
+    </section>
+
+    <section class="">
+        <!-- COLUMNS SECTION BEFORE FOOTER -->
+        <div class="container-fluid row align-items-center bg-primary m-5 text-white pt-3 pb-5 pl-5 mr-5">
+            <div class="col-4">
+                <p class="fw-bold">
+                    CONNECT WITH US
+                </p>
+
+                <div class="row align-items-center">
+                    <img src="./images/socmed.png" alt="">
+                </div>
+            </div>
+
+            <div class="col-4">
+                <p class="fw-bold mb-3">SITE MAP</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.663435904105!2d121.01338471475864!3d14.5612291898276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c908c1f230bf%3A0x3f4ddabe57d568e4!2sSen.%20Gil%20J.%20Puyat%20Ave%2C%20Makati%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1678971496007!5m2!1sen!2sph" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="col-3">
+                <p class="fw-bold mb-3 mr-5">
+                    SUBSCRIBE NOW
+                </p>
+                <form>
+                    <div class="mb-3">
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Email Address">
+
+                      <p class="mt-3">
+                        <button type="button" class="btn btn-light">SUBSCRIBE</button>
+                      </p>
+                    <div 
+                </form>
+            </div>
+
+            
+            
+        </div>
+    </section>
+
+
+    <!-- Bootstrap JS Bundle starts here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>l
