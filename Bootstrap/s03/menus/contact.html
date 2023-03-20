@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ABOUT US</title>
-    
-    <!-- Bootstrap CSS starts here -->
+    <title>CONTACT US</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
-    <!-- SaSS exported CSS starts here -->
     <link rel="stylesheet" href="../css/forms.css">
-
-    <!-- External Stylesheet goes here, without using SaSS -->
-    <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>
 
@@ -33,46 +28,53 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link" aria-current="page" href="../index.html">Home</a>
-                  <a class="nav-link active" href="#">About</a>
-                  <a class="nav-link" href="../menus/about.html">Products</a>
-                  <a class="nav-link" href="../menus/contact.html">Contact</a>
+                  <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                  <a class="nav-link" href="../menus/about.html">About</a>
+                  <a class="nav-link" href="../menus/products.html">Products</a>
+                  <a class="nav-link" href="#">Contact</a>
                 </div>
               </div>
             </div>
         </nav>
     </header>
 
-    <!-- ABOUT US content starts here -->
-    <section class="mb-5">
-        <div class="container mb-5">
-            <p class="h1 text-center mt-5 mb-5">
-                ABOUT US
-            </p>
+    <p class="h1 text-center mt-5">CONTACT FORM</p>
 
-            <img src="../images/the-simpsons.jpg" alt="the-simpsons" class="wrap-Text">
+    <section>
+        <form action="" class="container mt-5 mb-5">
+            <!-- First Name text field -->
+            <div class="mb-3 ">
+                <label for="fName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="fName" placeholder="Enter your First Name" required>
+            </div>
+            <!-- First Name text field -->
+            <div class="mb-3 ">
+                <label for="lName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lName" placeholder="Enter your Last Name" required>
+            </div>
+            <!-- Email Address -->
+            <div class="mb-3 ">
+                <label for="emailAdd" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="emailAdd" placeholder="Enter your Email Address" required>
+            </div>
+            <!-- Contact Number -->
+            <div class="mb-3 ">
+                <label for="contactNo" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" id="contactNo" placeholder="Enter your Contact Number (046)-123-4567" required>
+            </div>
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo excepturi corrupti odio commodi voluptatem dignissimos facilis fugit harum inventore? Esse magni quos vero unde sapiente possimus corporis blanditiis hic asperiores.
-            </p>
+            <!-- Customer Enquiry/Inquiry -->
+            <div class="mb-3 ">
+                <label for="message" class="form-label">Please state your detailed message here</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos a quaerat ipsa odio aut repellendus corporis alias, voluptate itaque totam, amet sunt iusto delectus. Reprehenderit velit vel esse itaque tenetur?
-            </p>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-secondary">Clear</button>
 
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, consequuntur earum. Minima commodi cumque voluptas mollitia necessitatibus quidem harum. Impedit necessitatibus temporibus officiis itaque minima, dolores a? Praesentium, reprehenderit mollitia.
-            </p>
-
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere iure amet at! Eveniet quas, eligendi nisi omnis, non maiores, incidunt obcaecati amet architecto error suscipit perferendis doloribus accusantium nobis perspiciatis!
-            </p>
-
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, eveniet. Laudantium porro, excepturi ea quo aut beatae, dicta eligendi cupiditate officiis eos obcaecati necessitatibus dolores illum a harum cum optio?
-            </p>
-        </div>
+        </form>
     </section>
+
 
     <section class="">
         <!-- COLUMNS SECTION BEFORE FOOTER -->
@@ -113,7 +115,6 @@
         </div>
     </section>
     
-    <!-- Bootstrap JS Bundle starts here -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
