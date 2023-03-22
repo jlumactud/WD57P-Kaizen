@@ -85,6 +85,43 @@ let person = {
     ]
 }
 
-console.log(person);
+console.log(person); //it displays the object content
 console.log(person.name);
+console.log(person.address);
+console.log(person.siblings); //it displays an array of siblings
+
+//NOTE: We will use dot (.) notation to call the properties in the specific object.
+
+//Array - storage of data types
+
+let fruits = ["Apple", "Pear", "Guava", "Aratilis", "Grapes"];
+
+console.log (fruits);
+console.log (fruits.length); //this method displays the number of elements inside the array/size of an array.
+console.log (fruits[2]);
+console.log (fruits[4]);
+
+//Function
+    //Function Declaration/structure
+        //function keyword
+        //function name and parenthesis (which holds the parameters)
+        //curly braces - determines the block of codes/statements that are written inside the code block
+    
+function greeting (firstName, lastName) {
+    //parameters a.k.a "arguments", "properties" and "attributes"
+
+    console.log(`My name is ${firstName}, ${lastName}. It was nice to meet you!`);
+
+}
+
+greeting ("Annie", "Batungbakal"); //invoke function calls
+
+greeting ("Rey", "Toro");
+
+function product (a,b) {
+    console.log("Product: ");
+    return (a*b); //stops the execution of a function and returns a value
+}
+
+console.log(product(2,4));
 
