@@ -123,5 +123,29 @@ function product (a,b) {
     return (a*b); //stops the execution of a function and returns a value
 }
 
-console.log(product(2,4));
+console.log(product(2,4)); //invoke the function
+
+//Exercise 
+
+/*
+    Create a function that computes the average of three numbers.
+*/
+
+function averageNum (num1, num2, num3) {
+    return (num1+num2+num3)/3;
+}
+
+console.log(averageNum(1,2,3));
+
+/*
+    Create a function that converts meter to kilometer using a return statement
+*/
+
+function convertNumbers (meters) {
+    const m = 1000;
+    console.log ("Result in km: ");
+    return (meters/m);
+}
+
+console.log(convertNumbers(20));
 
