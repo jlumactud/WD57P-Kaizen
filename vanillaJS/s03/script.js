@@ -175,39 +175,81 @@ if (myAge === 30) {
     }
 */
 
-let day = prompt ("Enter a number between 1 to 7");
+// let day = prompt ("Enter a number between 1 to 7");
 
-switch (day) 
+// switch (day) 
+// {
+//     case (day = "1"):
+//         console.log("Monday");
+//         break;
+
+//     case (day = "2"):
+//         console.log("Tuesday");
+//         break;
+
+//     case (day = "3"):
+//         console.log("Wednesday");
+//         break;
+
+//     case (day = "4"):
+//         console.log("Thursday");
+//         break;
+
+//     case (day = "5"):
+//         console.log("Friday");
+//         break;
+
+//     case (day = "6"):
+//         console.log("Saturday");
+//         break;
+
+//     case (day = "7"):
+//         console.log ("Sunday");
+//         break;
+
+//     default:
+//         console.log("Invalid weekday");
+
+// }
+
+let name = "Jiezel Olandag";
+console.log (name.length); //total 14: it counts the characters including space
+
+//Arrays and Objects
+let numbers = [1,54,58,60,75,90,99];
+console.log (numbers.length); //7 - because it counts the number of elements inside the array.
+
+let grades = [
+    //properties are also known as key value pair
+    {first:90},
+    {second: 92},
+    {third: 94},
+    {fourth: 96}
+];
+
+console.log (grades.length); //4 - it displays number of objects.
+
+if (numbers.length == 7 && grades.length >= 4)
 {
-    case (day = "1"):
-        console.log("Monday");
-        break;
+    console.log ("From the codeblock");
+} 
 
-    case (day = "2"):
-        console.log("Tuesday");
-        break;
-
-    case (day = "3"):
-        console.log("Wednesday");
-        break;
-
-    case (day = "4"):
-        console.log("Thursday");
-        break;
-
-    case (day = "5"):
-        console.log("Friday");
-        break;
-
-    case (day = "6"):
-        console.log("Saturday");
-        break;
-
-    case (day = "7"):
-        console.log ("Sunday");
-        break;
-
-    default:
-        console.log("Invalid weekday");
-
+else 
+{
+    console.log ("from the others");
 }
+
+//BONUS: Ternary Operator
+// ? - if
+// : - else
+
+/*
+    SYNTAX:
+    condition ? <statement> : statement
+*/
+
+let legalAge = 18;
+
+(legalAge >= 18) ? 
+console.log("legal") : console.log
+console.log ("minor"); //legal
