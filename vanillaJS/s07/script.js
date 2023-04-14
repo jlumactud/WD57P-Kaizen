@@ -182,3 +182,120 @@ console.log(charizzard);
 //Step 3: Execute the tackle property of pikachu object
 console.log(pikachu.tackle(charizzard));
 console.log(pikachu.tackle(charizzard));
+
+/*
+
+Exercise 1: Object Constructor
+Create your own person self object and with the use of object constructor, create a new person with different information out of the template.
+
+*/
+
+function Person (firstName, lastName, age)
+{
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.age = age;
+    this.fullName = `${firstName}, ${lastName}`;
+}
+
+let jelly = new Person("Jelly", "Lumactud", 11);
+console.log(jelly);
+
+//Array of Objects
+let cars = [
+    {
+        brand: "Toyota",
+        model: "vios",
+        price: 1000000
+    },
+
+    {
+        brand: "Honda",
+        model: "civic",
+        price: 700000
+    },
+
+    {
+        brand: "Toyota",
+        model: "corolla",
+        price: 1000000
+    }
+];
+
+/*
+    find()
+    - iterates over items in our array and returns the item/element 
+    which will satisfy the condition
+    - it will return the "first" item that will satisfy the condition
+    and stops the process.
+    - if find() cannot satisfy its condition even after iterating all of the items/elements
+    in the array, it will return undefined.
+    - we can even use logical operators for our condition
+    - Case sensitive
+*/
+
+let foundCar = cars.find (function (car)
+    {
+        console.log(car); //it displays car objects
+        return (car.brand == "Toyota")
+    }
+);
+console.log(foundCar); //it displays the specific brand of the car
+
+if (foundCar === undefined) {
+    console.log("Some data not existing");
+} else {
+    console.log("Data exist");
+}
+
+/*
+Exercise 2: Array of Objects 
+Create a new function called login.
+This function should be able to receive an email and a password.
+This function should be able to find the user with the correct email and password.
+Save the returned user into a variable.
+show the found user object in the console.
+
+Stretch Goal:
+if we can't find a user with the same email or password: Show an alert: Login Failed. Wrong Credentials.
+if we did find a user with the same email or password: Show an alert: Thank you for logging in. 
+
+*/
+
+let users = [
+	{
+		username: "kimdhyn",
+		email: "dahyun@gmail.com",
+		password: "dahyunTwiceu"
+	},
+	{
+		username: "jenKimBP",
+		email: "jennieSolo@gmail.com",
+		password: "dududuJennie",
+	},
+	{
+		username: "lisaBP",
+		email: "lisaManoban@gmail.com",
+		password: "lisaIsHere"
+	}
+];
+
+//SOLUTION:
+
+function login (userEmail, userPassword)
+{
+    let userCredentials = users.find((user) => {
+        return user.email === userEmail && user.password === userPassword
+    });
+
+    if(!userCredentials) {
+        alert ("Login Failed. Wrong Credentials");
+    }
+    else {
+        alert("Thank you for loggin in.")
+        console.log(userCredentials);
+    }
+}
+
+login("dahyun@gmail.com", "dahyunTwiceu");
+
